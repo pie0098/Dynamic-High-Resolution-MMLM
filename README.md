@@ -104,9 +104,9 @@ source ~/.bashrc
 
 ## 测试 / Testing
 
-测试预训练模型的文件为test.ipynb，预训练参照internVL2.5 MLP Warmup由于只训练MLP projector和1个epoch，没有训练qwen的lm_head和整个LLM，所以qwen回答的很差，本项目意在为训练动态分辨率多模态模型抛砖引玉。
+测试预训练模型的文件为test.ipynb，预训练参照internVL2.5 MLP Warmup由于只训练MLP projector和1个epoch，没有训练qwen的lm_head和整个LLM，所以qwen回答的不好，本项目意在为训练动态分辨率多模态模型抛砖引玉。
 
-The file for testing the pre-trained model is test.ipynb. The pre-training refers to internVL2.5 MLP Warmup. Since only the MLP projector and 1 epoch were trained, qwen's lm_head and the entire LLM were not trained, so qwen's answer was very poor. This project is intended to stimulate discussion for training dynamic resolution multimodal models.
+The file for testing the pre-trained model is test.ipynb. The pre-training refers to internVL2.5 MLP Warmup. Since only the MLP projector and 1 epoch were trained, qwen's lm_head and the entire LLM were not trained, so qwen's answer was poor. This project is intended to stimulate discussion for training dynamic resolution multimodal models.
 
 ## 致谢 / Acknowledgments
 
