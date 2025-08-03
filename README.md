@@ -26,6 +26,7 @@ git clone https://github.com/pie0098/Dynamic-High-Resolution-MMLM.git
 
 InternViT-300M-448px-V2_5下载自：
 https://hf-mirror.com/OpenGVLab/InternViT-300M-448px-V2_5
+
 Qwen-2.5-1.5B-Instruct下载自：
 https://hf-mirror.com/Qwen/Qwen2.5-1.5B-Instruct
 
