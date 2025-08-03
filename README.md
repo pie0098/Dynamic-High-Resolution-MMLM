@@ -5,8 +5,8 @@
 
 ## 训练策略
 
-本项目只进行预训练1个epoch示例（因为实在很耗时，太贵了），指令微调处理输入、输出的逻辑和预训练一致，只是预训练只进行图片、文本对齐层的训练，如internVL-2.5的文章中的MLP-Warmup；指令微调是在预训练的模型基础上，训练MLP+LLM (optional：+ InternViT)，数据集更小一点。
-训练的伪代码如下：
+本项目只进行预训练1个epoch示例（因为实在很耗时，太贵了），指令微调处理输入、输出的逻辑和预训练一致，只是预训练只进行图片、文本对齐层的训练，如internVL-2.5的文章中的MLP-Warmup；指令微调是在预训练的模型基础上，训练MLP projector+LLM (可选：+ InternViT)，数据集更小一点。
+指令微调训练MLP projector+LLM，冻结的InternViT伪代码如下：
 
 ```python
 for name, param in model.named_parameters():
@@ -98,7 +98,7 @@ for _, param in self.llm_model.lm_head.named_parameters():
 
 ## 致谢
 
-最后，鸣谢以下开源项目，排名不分先后：
+最后，鸣谢以下开源项目，大幅减少了重复造轮子的工作量，排名不分先后：
 
 1. https://github.com/wyf3/llm_related/blob/main/train_multimodal_from_scratch
 2. https://github.com/jingyaogong/minimind-v
