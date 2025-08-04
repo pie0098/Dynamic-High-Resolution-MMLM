@@ -13,7 +13,11 @@ for name, param in model.named_parameters():
     if 'vision_model' in name:
         param.requires_grad = False
 ```
-
+要开启qwen的lm_head训练，伪代码如下：
+```python
+for _, param in self.llm_model.lm_head.named_parameters():
+     param.requires_grad = True
+```
 ## 安装与设置
 
 ### 下载项目
@@ -91,11 +95,7 @@ source ~/.bashrc
 ## 测试
 
 测试预训练模型的文件为test.ipynb，预训练参照internVL2.5 MLP Warmup由于只训练MLP projector且只有1个epoch，没有训练qwen的lm_head和指令微调MLP projector + LLM，所以qwen回答的不好，本项目意在为训练动态分辨率多模态模型抛砖引玉。
-要开启qwen的lm_head训练，伪代码如下：
-```python
-for _, param in self.llm_model.lm_head.named_parameters():
-     param.requires_grad = True
-```
+
 
 ## 致谢
 
