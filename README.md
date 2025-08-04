@@ -1,4 +1,4 @@
-# Dynamic-High-Resolution-MMLM
+# Easy-Dynamic-High-Resolution-MMLM
 
 ## 项目概述
 本项目基于intern-vit-300M和Qwen-2.5-1.5B-Instruct训练动态高分辨率的多模态大模型，图片由processing_intern_vit.py转换为13, 3, 448, 448的pixels_value后与inputs_embeds拼接进入qwen。此处的13表示由12个1, 3, 448, 448的子图和一个1, 3, 448, 448的大图缩略图cat而成，可参照internVL-2.5的文章https://arxiv.org/abs/2412.05271。
