@@ -19,7 +19,7 @@ for name, param in model.named_parameters():
 ### 下载项目
 
 ```bash
-git clone https://github.com/pie0098/Dynamic-High-Resolution-MMLM.git
+git clone https://github.com/pie0098/Easy-Dynamic-High-Resolution-MMLM.git
 ```
 
 ### 下载模型
