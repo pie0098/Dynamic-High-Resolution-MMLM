@@ -100,7 +100,7 @@ source ~/.bashrc
 ## 致谢
 
 最后，鸣谢以下开源项目，大幅减少了重复造轮子的工作量，排名不分先后：
-
-1. https://github.com/wyf3/llm_related/blob/main/train_multimodal_from_scratch
-2. https://github.com/jingyaogong/minimind-v
-3. https://github.com/yujunhuics/Reyes 
+1. https://github.com/OpenGVLab/InternVL
+2. https://github.com/wyf3/llm_related/blob/main/train_multimodal_from_scratch
+3. https://github.com/jingyaogong/minimind-v
+4. https://github.com/yujunhuics/Reyes 
